@@ -36,7 +36,7 @@ class Todo {
     return this.todo;
   }
 
-showall() {
+  showall() {
     for (let i = 0; i < this.todo.length; i += 1) {
       const activity = this.todo[i];
       const container = document.createElement('li');
@@ -79,4 +79,4 @@ showall() {
 
 const list = new Todo();
 list.setTodo(todo);
-list.showall(); 
+list.showall();
