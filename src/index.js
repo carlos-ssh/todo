@@ -22,3 +22,9 @@ const todo = [
     index: 2,
   },
 ];
+
+
+
+const list = new Todo();
+list.setTodo(todo);
+list.showall(); 
