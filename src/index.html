@@ -9,23 +9,31 @@
 </head>
 
 <body>
-    <h1>My List</h1>
-    <ul class="to-do-list">
-        <li class="tdl-element first">
-            <h1 class="list-title">Pending To Do's:</h1>
-            <div class="refresh-button"></div>
-        </li>
-        <li class="tdl-element">
-            <form>
-                <input id="new-item" class="input" placeholder="Add to your list..." type="text">
-                <input id="submit-new-item" type="submit" tabindex="-1" value=""
-                    title="click this or press enter to submit" class="icon-return">
-            </form>
-        </li>
-        <li class="tdl-element erase-container">
-           <button class="erase"> Clear all completed</button>
-        </li>
-    </ul>
+    <section>
+        <div class="mine">
+            <div class="to-do-list container">
+                <h1 class="list-title">Pending To Do's:</h1>
+                <div class="refresh-button"></div>
+                <li class="tdl-element">
+                    <div class="modul">
+                        <input id="new-item" class="input" placeholder="Add to your list..." type="text">
+                        <button 
+                            id="submit-new-item" 
+                            type="submit" 
+                            tabindex="-1"
+                            title="press enter to submit"
+                            class="icon-return input-btn">
+                                <span class="add"> + </span>
+                        </button>
+                    </div>
+                </li>
+                <div class="tdl-element erase-container">
+                    <button class="erase"> Clear all completed</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html> 

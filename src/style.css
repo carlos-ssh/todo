@@ -1,5 +1,16 @@
 body {
+  background-color: #ffffff;
+}
+
+.container {
   background-color: #f6f6f6;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 .tdle-status-c {
@@ -22,44 +33,49 @@ body {
 }
 
 .input {
-  width: 80%;
-  margin-left: 10%;
+  margin-left: 20px;
+  text-indent: 15px;
+  width: 90%;
   border: none;
-}
-
-.icon-return {
-  width: 5%;
-  margin-left: auto;
-  margin-right: 2.5%;
+  border-radius: 12px;
+  box-shadow:  0 3px 1px 0px rgba(3, 3, 3, 0.171);
 }
 
 .tdl-element {
-  background-color: white;
   height: 50px;
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-width: 1px;
-  border-color: grey;
   display: flex;
   align-items: center;
-}
-
-ul {
   
-
-
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: grey;
-  display: grid;
-  grid-auto-rows: 1fr;
-  box-shadow: 4px 3px 8px 1px #969696;
-  -webkit-box-shadow: 4px 3px 8px 1px #969696;
 }
 
-form {
+.icon-return[type="submit"] {
+  border-radius: 3px 12px 12px 3px;
+  margin-left: -50px;
+  height: 100%;
+  width: 50px;
+  border: none;
+  color: #000000;
+  background-color: rgba(102, 102, 102, 0.37);
+}
+
+.add {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: #f6f6f6;
+  box-shadow: -2px 5px 8px 5px #5252524f;
+  -webkit-box-shadow: 4px 3px 8px 1px #3f3f3f57;
+}
+
+.modul{
   width: 100%;
   height: 100%;
   display: flex;
@@ -69,15 +85,31 @@ form {
   font-style: italic;
 }
 
-button {
+.erase {
   border: none;
   width: 100%;
   height: 100%;
+  background-color: rgba(102, 102, 102, 0.37);
 }
 
-button:hover {
-  background-color: rgb(98, 109, 112);
-  -webkit-box-shadow: 10px 10px 99px 6px rgb(98, 109, 112);
-  -moz-box-shadow: 10px 10px 99px 6px rgba(98, 109, 112);
-  box-shadow: 10px 10px 99px 6px rgba(98, 109, 112);
+.icon-return:hover, .erase:hover {
+  transition: background-color 0.7s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  color:white;
+  background-color: rgba(54, 54, 54, 0.37);
+}
+
+.icon-return:hover {
+  transition: background-color 0.7s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  color:white;
+}
+
+.css-selector {
+  background: linear-gradient(132deg, #999999, #636363, #3e3e3e, #d5d5d5);
+  background-size: 800% 800%;
+
+  -webkit-animation: body 30s ease infinite;
+  -moz-animation: body 30s ease infinite;
+  animation: body 30s ease infinite;
 }
