@@ -23,6 +23,19 @@ const todo = [
   },
 ];
 
+class Todo {
+  constructor() {
+    this.todo = null;
+  }
+
+  setTodo(todolist) {
+    this.todo = todolist;
+  }
+
+  getTodo() {
+    return this.todo;
+  }
+
 
 
 const list = new Todo();
