@@ -1,10 +1,10 @@
-import 'src/style.css';
-import { loadData } from './components/updates.js';
-import createList from './components/todoList.js';
+import './css/style.css'
+import { saveTodo } from './components/updates';
+import todoList from './components/todoList';
 
-const run = () => {
-  loadData();
-  createList();
+const start = () => {
+  todoList();
+  saveTodo();
 };
 
-run();
+start();
