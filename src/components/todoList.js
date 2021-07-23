@@ -71,8 +71,7 @@ export default function todoList() {
       const elementDragged = document.getElementById(idDragged);
       const elementDropped = document.getElementById(dragDrop);
       elementDropped.before(elementDragged);
-
-      
+      elementDropped.classList.remove('liOver');
       updateIndex();
     });
     
