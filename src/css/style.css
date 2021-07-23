@@ -104,3 +104,8 @@ h1 {
   transition: color 0.4s ease-in-out;
   color: white;
 }
+
+.liTask {
+  display: flex;
+  justify-content: space-between;
+}
