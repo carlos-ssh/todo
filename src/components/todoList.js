@@ -51,12 +51,16 @@ export default function todoList() {
     liTask.addEventListener('dragstart', function() { 
       console.log('starting dragstart', task.id);
       idDragged = task.id;
+      const li = document.getElementById(task.id);
+      li.classList.add('liDragging');
     });
 
     liTask.addEventListener('dragover', function(event) {
       event.preventDefault();
       console.log('dragover', task.id);
       dragOver = task.id;
+      const liOver = document.getElementById(task.id);
+      liOver.classList.add('liOver');
     });
 
     liTask.addEventListener('drop', function() {
@@ -74,10 +78,14 @@ export default function todoList() {
     
     liTask.addEventListener('dragleave', () => { 
       console.log('dragleave', task.id);
+      const liLeave = document.getElementById(task.id);
+      liLeave.classList.remove('liOver');
     });
 
     liTask.addEventListener('dragend', () => {
       console.log('dragend', task.id);
+      const liEnd = document.getElementById(task.id);
+      liEnd.classList.remove('liDragging');
     });
 
     const updateIndex = () => { 

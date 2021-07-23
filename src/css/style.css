@@ -105,7 +105,20 @@ h1 {
   color: white;
 }
 
+
+
+
+/* New Styles */
+
 .liTask {
   display: flex;
   justify-content: space-between;
+}
+
+.liDragging {
+  background-color: #22ff05;
+}
+
+.liOver {
+  background-color: #ff0000;
 }
